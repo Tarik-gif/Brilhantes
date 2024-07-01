@@ -1,0 +1,56 @@
+a, 
+.active > a, 
+.cp-navbar.menu-bg ul li.active a,
+.choose-box i.fa,
+.navbar-brand,
+.navbar-brand:hover,
+.home-services .service-box i.fa,
+.testimonial-area i.fa,
+.switch-style:before,
+.address-box i.fa,
+#show-map i.fa,
+.mainmenu .navbar-nav li.active a,
+.contact-form .form-group:before,
+.news-content .subtitle i.fa
+{
+    color: #f9ce06;
+}
+
+
+.skill-progress-bar > span,
+.accordion .panel-heading i.fa,
+.btn, 
+.cp-navbar .navbar-toggle .icon-bar,
+.price-item.featured .info ,
+.price-item.featured a.btn ,
+.tabs-left > .nav-tabs > li,
+.action-area ,
+.action-area h2 , 
+.member-social i.fa,
+#fun-facts,
+.price-item a.btn,
+.btn, 
+.price-item.featured p.price ,
+input[type='submit'],
+.navbar-toggle .icon-bar,
+.carousel-control img:hover,
+.subscribe-area,
+.newsletter-form .mc-submit,
+.nav-tabs li a,
+.project-item .figcaption,
+.owl-buttons i.fa
+{
+    background-color: #f9ce06;
+    color: #333;
+}
+
+.newsletter-form .mc-submit,
+.action-area .btn {
+    border-color: #333;
+}
+.subscribe-box h2,
+.btn.btn-trnsp,
+.newsletter-form .mc-submit:hover,
+.project-item a i.fa {
+    color: #333;
+}

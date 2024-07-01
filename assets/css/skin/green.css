@@ -1,0 +1,42 @@
+a, 
+.active > a, 
+.cp-navbar.menu-bg ul li.active a,
+.choose-box i.fa,
+.navbar-brand,
+.navbar-brand:hover,
+.home-services .service-box i.fa,
+.testimonial-area i.fa,
+.switch-style:before,
+.address-box i.fa,
+#show-map i.fa,
+.mainmenu .navbar-nav li.active a,
+.contact-form .form-group:before,
+.news-content .subtitle i.fa,
+.newsletter-form .mc-submit:hover
+{
+    color: #27ae60;
+}
+
+
+.skill-progress-bar > span,
+.accordion .panel-heading i.fa,
+.btn, 
+.cp-navbar .navbar-toggle .icon-bar,
+.price-item.featured .info ,
+.price-item.featured a.btn ,
+.tabs-left > .nav-tabs > li,
+.action-area, .member-social i.fa,
+#fun-facts,
+.price-item a.btn,
+.btn, 
+input[type='submit'],
+.navbar-toggle .icon-bar,
+.carousel-control img:hover,
+.subscribe-area,
+.newsletter-form .mc-submit,
+.nav-tabs li a,
+.project-item .figcaption,
+.owl-buttons i.fa
+{
+    background-color: #27ae60;
+}
