@@ -337,7 +337,7 @@
             callback: mailChimpResponse,
 
             // ADD YOUR MAILCHIMP URL BELOW HERE!
-            url: 'https://gmail.us13.list-manage.com/subscribe/post?u=5dd1d497244ded684faee2348&amp;id=251a73d6e9&amp;f_id=000a38e8f0'
+            url: 'https://gmail.us13.list-manage.com/subscribe/post?u=5dd1d497244ded684faee2348&;id=251a73d6e9&amp;f_id=000a38e8f0'
             
           });
 
