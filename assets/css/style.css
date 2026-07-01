@@ -1499,6 +1499,201 @@ fieldset {
 }
 
 .social-links li {
+}
+
+.news-modal .close-modal .lr {
+    height: 75px;
+    width: 1px;
+    margin-left: 35px;
+    background-color: #2C3E50;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 1051
+}
+
+.news-modal .close-modal .lr .rl {
+    height: 75px;
+    width: 1px;
+    background-color: #2C3E50;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    z-index: 1052
+}
+
+.news-modal .modal-backdrop {
+    opacity: 0;
+    display: none
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   17. Client area css
+* --------------------------------------------------------------------------------------- */
+.client-area {
+    background-color: #888;
+    background-image: url(../img/bg/client-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.client-area:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.owl-client {}
+.owl-client .item {
+    padding: 30px;
+}
+.owl-client .item img {
+    width: auto;
+    max-width: 100%;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   18. Contact area css
+* --------------------------------------------------------------------------------------- */
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    padding: 5px 0px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 5px;
+}
+
+.form-control:focus {
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form .form-group {
+    position: relative;
+    padding-left: 35px;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-form .form-group:before {
+    position: absolute;
+    height: 45px;
+    font-family: FontAwesome;
+    top: 0;
+    left: 0;
+    width: 20px;
+    text-align: center;
+    line-height: 45px;
+    color: #3f8ed9;
+    font-size: 18px;
+}
+
+.in_name:before {content: '\f007';}
+.in_email:before {content: '\f1d8';}
+.in_message:before {content: '\f0e0';}
+
+.contact-form textarea#message {
+    padding-top: 10px;
+    height: 115px;
+}
+
+#submitButton {}
+
+.success {
+    background: #fff none repeat scroll 0 0;
+    color: #50B948;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+.error {
+    background: #fff none repeat scroll 0 0;
+    color: #ff0000;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.address-box {
+    margin-bottom: 15px;
+    padding-left: 50px;
+}
+
+.address-box i.fa {
+    color: #3F8ED9;
+    font-size: 20px;
+    line-height: 30px;
+    float: left;
+    width: 40px;
+    text-align: center;
+    margin-left: -50px;
+}
+
+.address-box p, .address-box p a {
+    color: inherit;
+    margin: 0;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   19. Google Map area css
+* --------------------------------------------------------------------------------------- */
+#contactgoogleMap {
+    width: 100%;
+    height: 400px;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   20. Footer area css
+* --------------------------------------------------------------------------------------- */
+.footer-area {
+    background: #222;
+    padding: 50px 0px;
+    color: #fff;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .social-links{
+        float: right;
+    }
+}
+
+.social-links li {
     list-style: none;
     float: left;
     margin-right: 10px;
@@ -1530,4 +1725,213 @@ fieldset {
         display:table;
         margin: auto;
     }
+}
+
+/* =========================================================================================
+ *                  BRILHANTES BRAND IDENTITY OVERRIDES
+ * ========================================================================================= */
+
+/* Playful school notebook grid background (Liked by the user) */
+body, 
+.about-area, 
+.skill-area, 
+.service-area, 
+.video-area, 
+.news-area, 
+.contact-area {
+    background-color: #ffffff !important;
+    background-image: 
+        linear-gradient(to right, rgba(59, 130, 246, 0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(59, 130, 246, 0.06) 1px, transparent 1px) !important;
+    background-size: 28px 28px !important;
+}
+
+/* Playful Font for Titles */
+h1, h2, h3, h4, h5, h6, .section-title h2 {
+    font-family: 'Fredoka', sans-serif !important;
+    color: #1E3A8A !important;
+    font-weight: 600 !important;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    color: #FFF;
+    background-color: #20ba5a;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-float i {
+    margin: 0;
+    padding: 0;
+}
+
+/* Pill-shaped buttons styling (rounded buttons requested by user) */
+.btn, 
+input[type='submit'], 
+.btn-trnsp {
+    border-radius: 30px !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Maintain identical layout and Poppins font for slider titles that were converted to h2 for SEO */
+.intro-text h2.slider-h2 {
+    color: #fff !important;
+    font-size: 60px !important;
+    font-weight: 600 !important;
+    margin-top: 0px !important;
+    line-height: 70px !important;
+    margin-bottom: 30px !important;
+    text-transform: none !important;
+    font-family: 'Poppins', sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+@media only screen and (max-width: 767px) {
+    .intro-text h2.slider-h2 {
+        font-size: 40px !important;
+        line-height: 50px !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+/* =========================================================================================
+ *                  IMPROVED AESTHETICS - ÁREAS DE ATUAÇÃO (Service Area)
+ * ========================================================================================= */
+
+/* Prevent carousel clipping during hover animations and offset shadows */
+.home-services .owl-item {
+    padding: 15px 12px 30px 12px !important; /* Extra bottom padding to give room for shadows and hover translate effects */
+}
+
+.home-services .owl-wrapper-outer {
+    height: auto !important; /* Overrides Owl Carousel JS height calculations which cut off items */
+    padding-bottom: 15px !important; /* Extra bottom clearance inside the overflow-hidden wrapper */
+}
+
+/* Custom design for cards in the carousel */
+.home-services .service-box {
+    background-color: #ffffff !important;
+    border: 3px solid #1E3A8A !important;
+    border-radius: 20px !important;
+    box-shadow: 5px 5px 0px 0px #1E3A8A !important;
+    padding: 30px 20px !important;
+    text-align: center !important;
+    min-height: 350px !important; /* Uniform height ensures perfect layout alignment */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    transform: translateZ(0);
+}
+
+.home-services .service-box:hover {
+    transform: translate(-3px, -3px) scale(1.01) !important;
+    box-shadow: 8px 8px 0px 0px #1E3A8A !important;
+    border-color: #3B82F6 !important;
+}
+
+/* Icon box styling within cards */
+.home-services .service-box i.fa {
+    font-size: 42px !important;
+    width: 80px !important;
+    height: 80px !important;
+    line-height: 80px !important;
+    border-radius: 50% !important;
+    border: 2px solid #1E3A8A !important;
+    margin: 10px auto 20px auto !important;
+    display: block !important;
+    text-align: center !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Playful icons rotation on hover */
+.home-services .service-box:hover i.fa {
+    transform: rotate(10deg) scale(1.05) !important;
+}
+
+/* Title design inside cards */
+.home-services .service-box h3 {
+    font-family: 'Fredoka', sans-serif !important;
+    font-size: 20px !important;
+    color: #1E3A8A !important;
+    margin-top: 0 !important;
+    margin-bottom: 12px !important;
+    font-weight: 600 !important;
+}
+
+/* Text design inside cards */
+.home-services .service-box p {
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    color: #4B5563 !important;
+    text-align: center !important;
+    margin: 0 !important;
+}
+
+/* Instagram-inspired alternating colors for cards icons & accents */
+/* Card 1: Educação Infantil (Sky Blue) */
+.home-services .owl-item:nth-child(4n+1) .service-box i.fa {
+    color: #3B82F6 !important;
+    background-color: #EFF6FF !important;
+}
+/* Card 2: Ensino Fundamental 1 (Yellow) */
+.home-services .owl-item:nth-child(4n+2) .service-box i.fa {
+    color: #FBBF24 !important;
+    background-color: #FFFBEB !important;
+}
+/* Card 3: Educação Especial (Green) */
+.home-services .owl-item:nth-child(4n+3) .service-box i.fa {
+    color: #10B981 !important;
+    background-color: #ECFDF5 !important;
+}
+/* Card 4: Casos Especiais (Orange) */
+.home-services .owl-item:nth-child(4n+4) .service-box i.fa {
+    color: #F97316 !important;
+    background-color: #FFF7ED !important;
+}
+
+/* Ensure all slider/banner titles are white and readable on dark slide overlays */
+.intro-text h1,
+.intro-text h2,
+.intro-text h2.slider-h2 {
+    color: #ffffff !important;
+}
+
+/* Ensure action area heading is white and readable on dark background, with thinner font weight */
+.action-area h2 {
+    color: #ffffff !important;
+    font-weight: 300 !important;
+}
+.action-area h2 strong {
+    font-weight: 500 !important;
+}
+
+/* Automatically toggle accordion icons between plus and minus based on Bootstrap collapse state */
+.panel-heading a i.fa::before {
+    content: "\f068" !important; /* fa-minus when expanded */
+}
+.panel-heading a.collapsed i.fa::before {
+    content: "\f067" !important; /* fa-plus when collapsed */
 }
