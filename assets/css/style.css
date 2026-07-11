@@ -2102,32 +2102,91 @@ input[type='submit']:hover {
         padding-right: 20px !important;
     }
 
-    /* ===== SLIDER ===== */
+    /* ===== SLIDER / HERO COVER ===== */
+    #slider,
+    #slider .carousel,
+    #slider .carousel .carousel-inner,
+    #slider .carousel .carousel-inner .item {
+        min-height: 100vh !important;
+        height: 100vh !important;
+    }
+
+    #slider .table {
+        height: 100vh !important;
+        display: table !important; /* Keep table behavior for Owl compatibility if needed */
+    }
+
+    /* Position text using flex to distribute it across the page naturally */
+    #slider .table-cell {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        height: 100vh !important;
+        padding-top: 50px !important; /* compensate for fixed navbar */
+        padding-bottom: 20px !important;
+    }
+
     .intro-text {
-        padding: 0 25px !important;
+        padding: 0 20px !important;
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 100% !important; /* Fill cell */
+        width: 100% !important;
     }
-    .intro-text h1 {
-        font-size: 28px !important;
-        line-height: 38px !important;
-        margin-bottom: 12px !important;
-    }
+
+    /* Subtítulo (ex: "Venha conhecer nossas redes!") */
     .intro-text h2 {
-        font-size: 18px !important;
-        line-height: 26px !important;
-        margin-bottom: 8px !important;
-    }
-    .intro-text h2.slider-h2 {
-        font-size: 26px !important;
+        font-size: 26px !important; /* Aumentado */
         line-height: 34px !important;
-        margin-bottom: 20px !important;
+        margin-bottom: 25px !important; /* Mais respiro */
+        letter-spacing: 0.5px !important;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.6) !important;
     }
-    .intro-text .btn {
-        padding: 10px 24px !important;
-        font-size: 14px !important;
-        margin-top: 5px !important;
+
+    /* Título principal (ex: "Descubra um Novo Caminho de Aprendizado") */
+    .intro-text h1 {
+        font-size: 36px !important; /* Aumentado */
+        line-height: 46px !important;
+        margin-bottom: 30px !important; /* Mais respiro */
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.6) !important;
     }
+
+    /* Título grande dos slides 2 e 3 (slider-h2) */
+    .intro-text h2.slider-h2 {
+        font-size: 34px !important; /* Aumentado */
+        line-height: 44px !important;
+        margin-bottom: 35px !important; /* Mais respiro */
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.6) !important;
+    }
+
+    /* Botão CTA */
+    .intro-text .btn,
+    .intro-text .btn-trnsp {
+        padding: 14px 35px !important; /* Botão maior */
+        font-size: 16px !important;
+        margin-top: 15px !important;
+        border: 2px solid #fff !important;
+        background: rgba(255,255,255,0.1) !important;
+        backdrop-filter: blur(4px) !important;
+        -webkit-backdrop-filter: blur(4px) !important;
+        letter-spacing: 1px !important;
+    }
+    .intro-text .btn:hover,
+    .intro-text .btn-trnsp:hover {
+
+        background: rgba(255,255,255,0.25) !important;
+    }
+
+    /* Setas do carrossel */
     .carousel-control img {
-        padding: 12px 6px !important;
+        padding: 10px 5px !important;
+    }
+    #slider .carousel-control {
+        width: 10% !important;
     }
 
     /* ===== ABOUT SECTION ===== */
@@ -2399,16 +2458,29 @@ input[type='submit']:hover {
 /* --- SMALL MOBILE (max 480px) --- */
 @media only screen and (max-width: 480px) {
 
+    .intro-text {
+        padding: 0 18px !important;
+    }
     .intro-text h1 {
-        font-size: 22px !important;
-        line-height: 30px !important;
+        font-size: 32px !important;
+        line-height: 42px !important;
+        margin-bottom: 25px !important;
     }
     .intro-text h2 {
-        font-size: 15px !important;
-    }
-    .intro-text h2.slider-h2 {
         font-size: 22px !important;
         line-height: 30px !important;
+        margin-bottom: 20px !important;
+    }
+    .intro-text h2.slider-h2 {
+        font-size: 30px !important;
+        line-height: 40px !important;
+        margin-bottom: 30px !important;
+    }
+    .intro-text .btn,
+    .intro-text .btn-trnsp {
+        padding: 12px 30px !important;
+        font-size: 15px !important;
+        margin-top: 10px !important;
     }
 
     .section-title h2 {
